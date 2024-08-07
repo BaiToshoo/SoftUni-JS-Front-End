@@ -1,4 +1,4 @@
-function Employees(input) {
+function employees(input) {
     let employees = [];
 
     for (let i = 0; i < input.length; i++) {
@@ -13,4 +13,4 @@ function Employees(input) {
     }
 }
 
-Employees(['Silas Butler', 'Adnaan Buckley', 'Juan Peterson', 'Brendan Villarreal']); // Name: Silas Butler -- Personal Number: 12
+employees(['Silas Butler', 'Adnaan Buckley', 'Juan Peterson', 'Brendan Villarreal']); // Name: Silas Butler -- Personal Number: 12

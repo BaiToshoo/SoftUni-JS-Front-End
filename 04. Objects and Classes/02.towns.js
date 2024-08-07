@@ -1,4 +1,4 @@
-function Towns(input){
+function towns(input){
     input = input.map(x => x.split(' | '));
 
     let towns = [];
@@ -16,4 +16,4 @@ function Towns(input){
     }
 }
 
-Towns(['Sofia | 42.696552 | 23.32601', 'Beijing | 39.913818 | 116.363625']); // Name: Sofia -- Latitude: 42.70 -- Longitude: 23.33
+towns(['Sofia | 42.696552 | 23.32601', 'Beijing | 39.913818 | 116.363625']); // Name: Sofia -- Latitude: 42.70 -- Longitude: 23.33
