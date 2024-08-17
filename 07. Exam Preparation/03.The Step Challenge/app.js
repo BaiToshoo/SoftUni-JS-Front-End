@@ -49,6 +49,14 @@ function createRecordElement(name, steps, calories, _id) {
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('delete-btn');
     deleteButton.textContent = 'Delete';
+
+    deleteButton.addEventListener('click', async () => {
+        await fetch(`${baseURL}/${_id}`, {
+            method: 'DELETE'
+        });
+        
+        await loadRecords();
+    });
     
     const buttonDiv = document.createElement('div');
     buttonDiv.classList.add('btn-wrapper');
