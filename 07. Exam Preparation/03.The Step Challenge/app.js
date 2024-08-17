@@ -83,6 +83,10 @@ async function loadRecords(){
 }
 
 async function addRecord() {
+
+    if (!nameInput.value || !stepsInput.value || !caloriesInput.value) {
+        return;
+    }
     const name = nameInput.value;
     const steps = stepsInput.value;
     const calories = caloriesInput.value;
